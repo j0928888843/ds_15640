@@ -1,0 +1,12 @@
+char* return_package_gen(int val, int err_number);
+char* return_PL_package_gen(int val, int err_number, int size, char* payload);
+int open_package(char* buf, int* err);
+int close_package(char* buf, int* err);
+int write_package(char* buf, int* err);
+int read_package(char* buf, int* err, int* payloadSize, char** content);
+int lseek_package(char* buf, int* err);
+int unlink_package(char* buf, int* err);
+int stat_package(char* buf, int* err, int* payloadSize, char** payload);
+int __xstat_package(char* buf, int* err, int* payloadSize, char** payload);
+int gendirentries_package(char* buf, int* err, int* payloadSize, char** payload);
+int dirtree_package(char* buf, int* err, int* payloadSize, char** payload);
